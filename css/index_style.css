@@ -1,0 +1,177 @@
+body {
+	background-image: url("../images/pizza_background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#banner {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 15px;
+	border-style: inset;
+	box-shadow: 2px 2px 10px 10px rgba(57, 20, 15, 0.8);
+}
+
+h1 { /* Academy Pizza banner */
+	text-align: center;
+	color: #FFF94F;
+	text-transform: uppercase;
+	text-shadow: 3px 2px rgba(57, 20, 15, 0.8);
+	font-size: 60px;
+}
+
+h3 { /* Order box header */
+
+}
+
+h4 { /* Banner subtitle */
+	text-align: center;
+	color: black;
+	line-height: 0.8;
+}
+
+.orderform {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 5px auto;
+
+}
+
+.orderbox {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 15px;
+	border-style: inset;
+	box-shadow: 2px 2px 10px 10px rgba(57, 20, 15, 0.8);
+	width: 31vw;
+	margin: 5px;
+}
+
+.orderbox:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+label {
+	font-size: 24px;
+}
+
+input:checked + label {
+	color: #FFF94F;
+	font-weight: bold;
+	text-shadow: 0px 0px 10px black;
+}
+
+.ordernow {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 5px auto;
+}
+
+#ordernowbutton {
+	background-color: rgba(37, 73, 23, 0.8);
+	border-radius: 15px;
+	border-style: inset;
+	box-shadow: 2px 2px 10px 10px rgba(57, 20, 15, 0.8);
+	width: 31vw;
+	height: 15vh;
+	display: block;
+	margin: 5px auto;
+	color: white;
+	font-size: 40px;
+
+}
+
+#ordernowbutton:focus,
+#ordernowbutton:hover {
+	background-color: rgba(37, 73, 23, 1.0);
+	color: #FFF94F;
+}
+
+#invoice { /* This is the pop up invoice style */
+	position: fixed;
+	z-index: 1;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	height: 80%;
+	background-color: rgba(0, 0, 0, 0.9);
+	border-radius: 15px;
+}
+
+
+.modal-content {
+	margin: 5% auto;
+	padding: 0px;
+}
+
+.modal-button {
+	color: #aaa;
+	font-size: 28px;
+	font-weight: bold;
+	position: absolute;
+	right: 0px;
+	border-radius: 15px;
+	border-style: inset;
+	border-color: #FFF94F;
+	padding: 3px;
+}
+
+.modal-button:focus,
+.modal-button:hover {
+	color: #FFF94F;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.finalinvoice {
+	color: white;
+}
+
+table, th, td {
+	border: 1px solid white;
+	border-radius: 8px;
+}
+
+table {
+	font-size: 25px;
+}
+
+th, td {
+	font-size: 20px;
+}
+
+#invoicetable {
+	color: white;
+	width: 90%;
+
+
+}
+
+.items {
+	text-align: left;
+}
+
+.selections {
+	text-align: left;
+}
+
+.costs {
+	text-align: right;
+}
+
+#closebutton {
+	top: 0;
+}
+
+#printbutton {
+	bottom: 0;
+}
+
+.hidden {
+	display: none;
+}
+

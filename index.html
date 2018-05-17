@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS DISABLED FOR PRACTICE
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		-->
+		<link rel="stylesheet" type="text/css" href="./css/index_style.css">
+
+		<title>Academy Pizza</title>
+		<link rel="icon" type="image/x-icon" href="./pizza_icon.ico">
+	</head>
+	<body>
+		<!-- Header/banner -->
+		<header id="banner">
+			<h1>Academy Pizza</h1>
+			<h4>Fine Gourmet Pizza for the whole family!</h4>
+		</header>
+		<!-- /Header/banner -->
+
+		<!-- Pizza Order Form -->
+		<form class="orderform">
+			<div class="orderbox" id="sizebox">
+				<h3>Size:</h3>
+				<input type="radio" name="size" value="Personal" id="sizepersonal">
+					<label for="sizepersonal">Personal</label><br />
+				<input type="radio" name="size" value="Medium" id="sizemedium" checked>
+					<label for="sizemedium">Medium</label><br />
+				<input type="radio" name="size" value="Large" id="sizelarge">
+					<label for="sizelarge">Large</label><br />
+				<input type="radio" name="size" value="Extra Large" id="sizeextra-large">
+					<label for="sizeextra-large">Extra Large</label><br />
+			</div>
+			<div class="orderbox" id="crustbox">
+				<h3>Crust</h3>
+				<input type="radio" name="crust" value="Plain" id="crustplain" checked="">
+					<label for="crustplain">Plain Crust</label><br />
+				<input type="radio" name="crust" value="Garlic Butter" id="crustgarlic-butter">
+					<label for="crustgarlic-butter">Garlic Butter Crust</label><br />
+				<input type="radio" name="crust" value="Cheese Stuffed" id="crustcheese-stuffed">
+					<label for="crustcheese-stuffed">Cheese-Stuffed Crust</label><br />
+				<input type="radio" name="crust" value="Spicy" id="crustspicy">
+					<label for="crustspicy">Spicy Crust</label><br />
+				<input type="radio" name="crust" value="House Special" id="crusthouse-special">
+				<label for="crusthouse-special">House Special</label><br />
+			</div>
+			<div class="orderbox" id="saucebox">
+				<h3>Sauce:</h3>
+				<input type="radio" name="sauce" value="Marinara" checked="" id="saucemarinara">
+					<label for="saucemarinara">Marinara Sauce</label><br />
+				<input type="radio" name="sauce" value="White" id="saucewhite">
+					<label for="saucewhite">White Sauce</label><br />
+				<input type="radio" name="sauce" value="Barbeque" id="saucebarbeque">
+					<label for="saucebarbeque">Barbeque Sauce</label><br />
+				<input type="radio" name="sauce" value="None" id="saucenone">
+					<label for="saucenone">No Sauce</label><br />
+			</div>
+			<div class="orderbox" id="meatbox">
+				<h3>Meat:</h3>
+				<input type="checkbox" name="meats" value="Pepperoni" id="meatpepperoni">
+					<label for="meatpepperoni">Pepperoni</label><br />
+				<input type="checkbox" name="meats" value="Sausage" id="meatsausage">
+					<label for="meatsausage">Sausage</label><br />
+				<input type="checkbox" name="meats" value="Canadian Bacon" id="meatcanadian-bacon">
+					<label for "meatcanadian-bacon">Canadian Bacon</label><br />
+				<input type="checkbox" name="meats" value="Ground Beef" id="meatground-beef">
+					<label for="meatground-beef">Ground Beef</label><br />
+				<input type="checkbox" name="meats" value="Anchovy" id="meatanchovy">
+					<label for="meatanchovy">Anchovy</label><br />
+				<input type="checkbox" name="meats" value="Chicken" id="meatchicken">
+					<label for="meatchicken">Chicken</label><br />
+			</div>
+			<div class="orderbox" id="cheesebox">
+				<h3>Cheese:</h3>
+				<input type="radio" name="cheese" value="Regular" checked="" id="cheeseregular">
+					<label for="cheeseregular">Regular Cheese</label><br />
+				<input type="radio" name="cheese" value="None" id="cheesenone">
+					<label for="cheesenone">No Cheese</label><br />
+				<input type="radio" name="cheese" value="Extra" id="cheeseextra-cheese">
+					<label for="cheeseextra-cheese">Extra Cheese</label><br />
+			</div>
+			<div class="orderbox" id="veggiebox">
+				<h3>Veggies:</h3>
+				<input type="checkbox" name="veggies" value="Tomatoes" id="veggiestomatoes">
+					<label for="veggiestomatoes">Tomatoes</label><br />
+				<input type="checkbox" name="veggies" value="Onions" id="veggiesonions">
+					<label for="veggiesonions">Onions</label><br />
+				<input type="checkbox" name="veggies" value="Olives" id="veggiesolives">
+					<label for="veggiesolives">Olives</label><br />
+				<input type="checkbox" name="veggies" value="Green Peppers" id="veggiesgreen-peppers">
+					<label for="veggiesgreen-peppers">Green Peppers</label><br />
+				<input type="checkbox" name="veggies" value="Mushrooms" id="veggiesmushrooms">
+					<label for="veggiesmushrooms">Mushrooms</label><br />
+				<input type="checkbox" name="veggies" value="Pineapple" id="veggiespineapple">
+					<label for="veggiespineapple">Pineapple</label><br />
+				<input type="checkbox" name="veggies" value="Spinach" id="veggiesspinach">
+					<label for="veggiespinache">Spinach</label><br />
+				<input type="checkbox" name="veggies" value="Jalapeno" id="veggiesjalapeno">
+					<label for="veggiesjalapeno">Jalapeno</label><br />
+			</div>
+			
+		</form>
+		<!-- /Pizza Order Form -->
+
+		<!-- Order Button -->
+		<section id="ordernow">
+
+			<button id="ordernowbutton">Order Now!</button>
+
+		</section>
+		<!-- /Order Button -->
+
+		<!-- Display Invoice here after Order -->
+		<div id="invoice" class="modal hidden">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="modal-button" id="closebutton">Close</span>
+					<div class="finalinvoice">
+						<h2>Thank you for your order! You have selected:</h2>
+						<table id="invoicetable">
+							<tr>
+								<th class="items">Item</th>
+								<th class="selections">Selection</th>
+								<th class="costs">Cost</th>
+							<tr>
+							<tr>
+								<td class="items">Size:</td>
+								<td class="selections" id="invoicesize"></td>
+								<td class="costs" id="invoicesizecost"></td>
+							</tr>
+														<tr>
+								<td class="items">Crust:</td>
+								<td class="selections" id="invoicecrust"></td>
+								<td class="costs" id="invoicecrustcost"></td>
+							</tr>
+														<tr>
+								<td class="items">Sauce:</td>
+								<td class="selections" id="invoicesauce"></td>
+								<td class="costs" id="invoicesaucecost"></td>
+							</tr>
+														<tr>
+								<td class="items">Meats:</td>
+								<td class="selections" id="invoicemeats"></td>
+								<td class="costs" id="invoicemeatscost"></td>
+							</tr>
+														<tr>
+								<td class="items">Cheese:</td>
+								<td class="selections" id="invoicecheese"></td>
+								<td class="costs" id="invoicecheesecost"></td>
+							</tr>
+														<tr>
+								<td class="items">Veggies:</td>
+								<td class="selections" id="invoiceveggies"></td>
+								<td class="costs" id="invoiceveggiescost"></td>
+							</tr>
+														<tr>
+								<td class="items">Total:</td>
+								<td class="selections" id="invoicetotal"></td>
+								<td class="costs" id="invoicetotalcost"></td>
+							</tr>
+
+						</table>
+					</div>
+				<span class="modal-button" id="printbutton">Print invoice</span>
+			</div>
+			<!-- /Modal content -->
+		</div>
+		<!-- /Display Invoice here after Order -->
+
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<!-- For educational purposes, not using Bootstrap
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+		-->
+
+		<script src="./js/index_js.js"></script>
+
+		
+
+
+	</body>
+</html>
